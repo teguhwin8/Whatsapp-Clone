@@ -1,0 +1,43 @@
+@import "../pages/variable";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 16px;
+    background-color: $panel-header-background;
+    .avatar {
+        cursor: pointer;
+    }
+    .rightHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8px;
+    }
+}
+
+.searchForm {
+    background-color: #F6F6F6;
+    padding: 7px 13px;
+    .searchInput {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        background-color: $white-color;
+        border-radius: 30px;
+        padding-right: 18px;
+        .iconButton {
+            padding: 10px;
+            .searchIcon {
+                width: 18px;
+                height: 18px
+            }
+        }
+        .input {
+            font-size: .9rem;
+            line-height: 1;
+            width: 100%;
+        }
+    }
+}
