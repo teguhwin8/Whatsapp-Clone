@@ -9,6 +9,7 @@
 		border-right: 1px $background-color solid;
 		display: flex;
 		flex-direction: column;
+		overflow: hidden;
 	}
 	.right {
 		background-color: $brown-color;
