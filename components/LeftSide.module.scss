@@ -1,43 +1,50 @@
 @import "../pages/variable";
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7px 16px;
-    background-color: $panel-header-background;
-    .avatar {
-        cursor: pointer;
-    }
-    .rightHeader {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 8px;
-    }
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 16px;
+	background-color: $panel-header-background;
+	height: 59px;
+	.avatar {
+		cursor: pointer;
+	}
+	.rightHeader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 8px;
+		gap: 10px;
+		.iconButton {
+			width: 40px;
+			height: 40px;
+		}
+	}
 }
 
 .searchForm {
-    background-color: #F6F6F6;
-    padding: 7px 13px;
-    .searchInput {
-        display: flex;
-        align-items: center;
-        gap: 7px;
-        background-color: $white-color;
-        border-radius: 30px;
-        padding-right: 18px;
-        .iconButton {
-            padding: 10px;
-            .searchIcon {
-                width: 18px;
-                height: 18px
-            }
-        }
-        .input {
-            font-size: .9rem;
-            line-height: 1;
-            width: 100%;
-        }
-    }
+	background-color: #f6f6f6;
+	padding: 7px 13px;
+	border-bottom: 1px $panel-header-background solid;
+	.searchInput {
+		display: flex;
+		align-items: center;
+		gap: 14px;
+		background-color: $white-color;
+		border-radius: 30px;
+		padding-right: 32px;
+        height: 35px;
+		.searchIcon {
+			width: 21px;
+			height: 21px;
+			margin: 0 14px;
+			cursor: pointer;
+		}
+		.input {
+			font-size: 0.9rem;
+			line-height: 1;
+			width: 100%;
+		}
+	}
 }

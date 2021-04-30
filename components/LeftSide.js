@@ -6,6 +6,7 @@ import MessageIcon from "@material-ui/icons/Message"
 import MoreVertIcon from "@material-ui/icons/MoreVert"
 import InputBase from "@material-ui/core/InputBase"
 import IconButton from "@material-ui/core/IconButton"
+import ContactList from './ContactList'
 
 const LeftSide = () => {
   return (
@@ -13,26 +14,20 @@ const LeftSide = () => {
       <header className={styles.header}>
         <Avatar className={styles.avatar} />
         <div className={styles.rightHeader}>
-          <IconButton>
+          <IconButton className={styles.iconButton}>
             <DonutLargeIcon />
           </IconButton>
-          <IconButton>
+          <IconButton className={styles.iconButton}>
             <MessageIcon />
           </IconButton>
-          <IconButton>
+          <IconButton className={styles.iconButton}>
             <MoreVertIcon />
           </IconButton>
         </div>
       </header>
       <div className={styles.searchForm}>
         <div className={styles.searchInput}>
-          <IconButton
-            type="submit"
-            className={styles.iconButton}
-            aria-label="search"
-          >
-            <SearchIcon className={styles.searchIcon} />
-          </IconButton>
+          <SearchIcon color="disabled" className={styles.searchIcon} />
           <InputBase
             className={styles.input}
             placeholder="Cari atau mulai chat baru"
@@ -40,7 +35,7 @@ const LeftSide = () => {
           />
         </div>
       </div>
-      {/* ContactList */}
+      <ContactList />
     </>
   )
 }
